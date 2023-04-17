@@ -1,13 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <link href="css/outlines.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="portfolio">
+    <title>Portfolio</title>
 </head>
 <body>
-    
+    <header>
+        <img src="img/icons_svg/main-logo.svg" width="60px" height="60px" alt="main_logo">
+
+        <nav>
+            <a href="#about_me">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#interests">Интересы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="img/jpg/user-photo.jpg" width="400px" height="400px" alt="user_photo">
+
+            <h1>Сергей Константинов</h1>
+            Программист
+        </section>
+        <section>
+            <h2 id="about_me">Пара слов обо мне</h2>
+            <p>
+                Привет
+            </p>
+            <p>
+                В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана <br> 
+                по направлению «Информатика и вычисли­тельная техника».
+            </p>
+            <p>
+                В прошлом году защитил диплом бакалавра на тему «Разработка очень <br>
+                сложного программного комплекса для супер-важной цели». Работа была <br>
+                высоко оценена комиссией.
+            </p>
+            <p>    
+                Также я уже успел поработать инженером в одном провайдере в Пушкино, <br> 
+                но в будущем планирую стать разработчиком сложных программных <br>
+                комплексов и систем.
+            </p>
+        </section>
+        <section>
+            <h2 id="skills">Мои навыки</h2>
+            <div>
+                Сортировать
+                <button>по названию</button>
+                <button>по уровню</button>
+            </div>
+            <dl>
+                <dt>html</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+
+                <dt>css</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+
+                <dt>python</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+
+                <dt>java</dt>
+                <dd>
+                    <div style="width: 40%;">40%</div>
+                </dd>
+            </dl>
+        </section>
+        <section>
+            <h2 id="interests">Мои интересы</h2>
+            <p>
+                Наибольший интерес для меня в данный момент представляет <br>
+                программирование и изучение искусственного интеллекта.
+            </p>
+            <p>
+                Но помимо учёбы и работы я также люблю играть на барабанах и читать <br>
+                зарубежную классику.
+            </p>
+        </section>
+        <section>
+            <h2 id="contacts">Мои контакты</h2>
+
+            <a href="mailto:email@mail.ru">email@mail.ru</a>
+            <a href="tel:+79991234567">+7 999 123-45-67</a>
+
+            <ul>
+                <li><a href="">github</a></li>
+                <li><a href="">teegram</a></li>
+                <li><a href="">vk</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        © 2023 Сергей Константинов
+    </footer>
 </body>
 </html>

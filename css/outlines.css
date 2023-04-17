@@ -132,3 +132,12 @@ aside::before {
 nav::before {
   content: "nav";
 }
+
+ul.hor-disp {
+  
+}
+
+ ul.hor-disp li {
+  display: inline;
+  margin-right: 0px;
+ }
