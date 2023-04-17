@@ -55,25 +55,29 @@ aside::before {
   color: #9779ec;
 }
 
-h1 {
+h1, 
+h2 {
   font-size: 18px;
   background-color: #ffffff;
   border: 2px solid #ff994f;
 }
 
-h1::before {
-  content: "h1";
+h1::before,
+h2::before {
   color: #ff994f;
 }
 
-p {
+p,
+div,
+ul {
   background-color: #ffffff;
   border: 2px solid #f36dff;
 }
 
-p::before {
+p::before,
+div::before,
+ul::before {
   color: #f36dff;
-  content: "p";
 }
 
 * {
@@ -131,4 +135,24 @@ aside::before {
 
 nav::before {
   content: "nav";
+}
+
+p::before {
+  content: "p";
+}
+
+div::before {
+  content: "div";
+}
+
+ul::before {
+  content: "ul";
+}
+
+h1::before {
+  content: "h1";
+}
+
+h2::before {
+  content: "h2";
 }
