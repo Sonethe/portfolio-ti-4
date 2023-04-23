@@ -224,7 +224,7 @@ h3 {
 .contacts-link,
 button,
 .social-link {
-    transition-duration: 1.1s;
+    transition: 500ms;
 }
 
 .main-nav a:hover,
