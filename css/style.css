@@ -118,6 +118,54 @@ button {
     background-image: url(/img/icons_svg/contacts/phone.svg);
 }
 
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+.skill-level {
+    margin: 4px 0 16px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--black);
+    border-radius: 16px;
+}
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--green);
+    border-radius: 8px;
+}
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+.skill-item_html {
+    background-image: url("/img/icons_svg/skills/html.svg");
+}
+
+.skill-item_css {
+    background-image: url("/img/icons_svg/skills/css.svg");
+}
+
+.skill-item_python {
+    background-image: url("/img/icons_svg/skills/python.svg");
+}
+
+.skill-item_java {
+    background-image: url("/img/icons_svg/skills/java.svg");
+}
+
 .social-link {
     display: block;
     width: 50px;
@@ -149,6 +197,10 @@ button {
     color: var(--green);
     font-size: 38px;
     line-height: 120%;
+}
+
+.subtitle img {
+    border-radius: 50%;
 }
 
 .visually-hidden {
