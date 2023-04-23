@@ -81,10 +81,87 @@ button {
     color: var(--green);
 }
 
+.contacts,
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contacts li,
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-link {
+    color: var(--black);
+    display: block;
+    width: 203px;
+    height: 30px;
+    padding: 5px 0 5px 42px;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-decoration: none;
+}
+
+.contacts-link:hover {
+    color: var(--green);
+}
+
+.contacts-link_email {
+    background-image: url(/img/icons_svg/contacts/email.svg);
+}
+
+.contacts-link_tel {
+    background-image: url(/img/icons_svg/contacts/phone.svg);
+}
+
+.social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-link:hover {
+    background-color: var(--green);
+}
+
+.social-link_github {
+    background-image: url(/img/icons_svg/social/github.svg);
+}
+
+.social-link_telegram {
+    background-image: url(/img/icons_svg/social/telegram.svg);
+}
+
+.social-link_vk {
+    background-image: url(/img/icons_svg/social/vk.svg);
+}
+
 .subtitle p {
     color: var(--green);
     font-size: 38px;
     line-height: 120%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .about_me p, 
