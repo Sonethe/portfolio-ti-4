@@ -1,12 +1,21 @@
-* {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
+:root {
+    --black: #212121;
+    --green: #09A494;
+    --white: #FFFFFF;
 }
 
 body {
+    color: var(--black);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
+}
+
+footer {
+    color: var(--white);
+    background-color: var(--black);
 }
 
 h1 {
@@ -29,21 +38,20 @@ h3 {
 
 a,
 button {
-    font-weight: 400;
     font-size: 20px;
     line-height: 100%;
 }
 
 .subtitle p {
-    font-weight: 400;
+    color: var(--green);
     font-size: 38px;
     line-height: 120%;
-
-    color: #09A494;
 }
 
-.about_me p, .skills p, .interests p, .contacts p {
-    font-weight: 400;
+.about_me p, 
+.skills p, 
+.interests p, 
+.contacts p {
     font-size: 20px;
     line-height: 150%;
 }
