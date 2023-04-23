@@ -19,6 +19,21 @@ body {
     line-height: 150%;
 }
 
+button {
+    padding: 6px 10px 6px 10px;
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    color: var(--green);
+    background-color: var(--white);
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+button:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
 footer {
     color: var(--white);
     background-color: var(--black);
@@ -53,6 +68,17 @@ button {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.main-nav a {
+    color: var(--black);
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: var(--green);
 }
 
 .subtitle p {
