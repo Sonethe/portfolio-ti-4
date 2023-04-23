@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 :root {
     --black: #212121;
     --green: #09A494;
@@ -40,6 +46,13 @@ a,
 button {
     font-size: 20px;
     line-height: 100%;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .subtitle p {
