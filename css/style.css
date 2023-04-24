@@ -4,8 +4,8 @@
     font-style: normal;
     font-weight: 400;
     src: local("Open Sans"), 
-        url("/portfolio-ti-4/fonts/OpenSans-Regular.woff2") format("woff2"), 
-        url("/portfolio-ti-4/fonts/OpenSans-Regular.woff") format("woff");
+        url("https://Sonethe.github.io/portfolio-ti-4/fonts/OpenSans-Regular.woff2") format("woff2"), 
+        url("https://Sonethe.github.io/portfolio-ti-4/fonts/OpenSans-Regular.woff") format("woff");
     font-display: swap;
 }
 
@@ -15,8 +15,8 @@
     font-style: normal;
     font-weight: 700;
     src: local("Open Sans"), 
-        url("/portfolio-ti-4/fonts/OpenSans-Bold.woff2") format("woff2"),
-        url("/portfolio-ti-4/fonts/OpenSans-Bold.woff") format("woff");
+        url("https://Sonethe.github.io/portfolio-ti-4/fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("https://Sonethe.github.io/portfolio-ti-4/fonts/OpenSans-Bold.woff") format("woff");
     font-display: swap;
 }
 
@@ -119,11 +119,11 @@ h3 {
 }
 
 .contacts-link_email {
-    background-image: url("/portfolio-ti-4/img/icons_svg/contacts/email.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/contacts/email.svg");
 }
 
 .contacts-link_tel {
-    background-image: url("/portfolio-ti-4/img/icons_svg/contacts/phone.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/contacts/phone.svg");
 }
 
 .skill-list {
@@ -159,19 +159,19 @@ h3 {
 }
 
 .skill-item_html {
-    background-image: url("/portfolio-ti-4/img/icons_svg/skills/html.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/skills/html.svg");
 }
 
 .skill-item_css {
-    background-image: url("/portfolio-ti-4/img/icons_svg/skills/css.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/skills/css.svg");
 }
 
 .skill-item_python {
-    background-image: url("/portfolio-ti-4/img/icons_svg/skills/python.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/skills/python.svg");
 }
 
 .skill-item_java {
-    background-image: url("/portfolio-ti-4/img/icons_svg/skills/java.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/skills/java.svg");
 }
 
 .social-link {
@@ -186,15 +186,15 @@ h3 {
 }
 
 .social-link_github {
-    background-image: url("/portfolio-ti-4/img/icons_svg/social/github.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/social/github.svg");
 }
 
 .social-link_telegram {
-    background-image: url("/portfolio-ti-4/img/icons_svg/social/telegram.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/social/telegram.svg");
 }
 
 .social-link_vk {
-    background-image: url("/portfolio-ti-4/img/icons_svg/social/vk.svg");
+    background-image: url("https://Sonethe.github.io/portfolio-ti-4/img/icons_svg/social/vk.svg");
 }
 
 .subtitle p {
