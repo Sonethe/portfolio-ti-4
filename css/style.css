@@ -1,20 +1,18 @@
 @font-face {
-    font-display: swap;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"), 
+    src: local("Open Sans"), local("OpenSans"),
         url(../fonts/OpenSans-Regular.woff2) format("woff2"), 
         url(../fonts/OpenSans-Regular.woff) format("woff");
     font-display: swap;
 }
 
 @font-face {
-    font-display: swap;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans"), 
+    src: local("Open Sans Bold"), local("OpenSans-Bold"),
         url(../fonts/OpenSans-Bold.woff2) format("woff2"),
         url(../fonts/OpenSans-Bold.woff) format("woff");
     font-display: swap;
@@ -51,11 +49,11 @@ a {
 }
 
 button {
-    padding: 6px 10px 6px 10px;
+    padding: 6px 10px 10px 10px;
     border: 1px solid var(--green);
     border-radius: 8px;
     color: var(--green);
-    background-color: var(--white);
+    background-color: transparent;
     cursor: pointer;
     text-transform: lowercase;
     line-height: 100%;
@@ -110,8 +108,6 @@ h3 {
 .contacts-link {
     color: var(--black);
     display: block;
-    width: 203px;
-    height: 30px;
     padding: 5px 0 5px 42px;
     background-position: left;
     background-repeat: no-repeat;
@@ -197,7 +193,7 @@ h3 {
     background-image: url(../img/icons_svg/social/vk.svg);
 }
 
-.subtitle p {
+.subtitle {
     color: var(--green);
     font-size: 38px;
     line-height: 120%;
