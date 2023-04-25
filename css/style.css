@@ -84,6 +84,10 @@ h3 {
     padding: 0 20px;
 }
 
+.intro img {
+    border-radius: 50%;
+}
+
 .main-nav a {
     color: var(--black);
     display: inline-block;
@@ -197,10 +201,6 @@ h3 {
     color: var(--green);
     font-size: 38px;
     line-height: 120%;
-}
-
-.subtitle img {
-    border-radius: 50%;
 }
 
 .visually-hidden {
