@@ -62,12 +62,14 @@ button {
 h1 {
     font-weight: 700;
     font-size: 60px;
+    margin: 0 0 20px 0;
     line-height: 110%;
 }
 
 h2 {
     font-weight: 700;
     font-size: 30px;
+    margin: 0 0 40px 0;
     line-height: 120%;
 }
 
@@ -77,6 +79,22 @@ h3 {
     line-height: 120%;
 }
 
+nav {
+    display: flex;
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin-top: 15px;
+}
+
+section {
+    margin: 120px 0 120px 0;
+}
+
 .container {
     min-width: 320px;
     max-width: 1280px;
@@ -84,32 +102,63 @@ h3 {
     padding: 0 20px;
 }
 
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .intro img {
     border-radius: 50%;
+    justify-self: flex-end;
+    order: 1;
+}
+
+.main-footer {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-header {
+    align-items: center;
+    display: flex;
+    padding-top: 60px;
+    gap: 40px;
 }
 
 .main-nav a {
     color: var(--black);
-    display: inline-block;
     padding: 10px 15px 10px 15px;
     text-decoration: none;
 }
 
-.contacts,
+.mail-phone,
 .social {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.contacts li,
+.mail-phone li,
 .social li {
     display: inline-block;
     margin: 0;
     padding: 0;
 }
 
-.contacts-link {
+.mail-phone {
+    display: flex;
+    gap: 40px;
+}
+
+.contacts-all {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mail-phone-link {
     color: var(--black);
     display: block;
     padding: 5px 0 5px 42px;
@@ -118,12 +167,16 @@ h3 {
     text-decoration: none;
 }
 
-.contacts-link_email {
+.mail-phone-link_email {
     background-image: url(../img/icons_svg/contacts/email.svg);
 }
 
-.contacts-link_tel {
+.mail-phone-link_tel {
     background-image: url(../img/icons_svg/contacts/phone.svg);
+}
+
+.text-wrapper {
+    max-width: 800px;
 }
 
 .skill-list {
@@ -141,7 +194,7 @@ h3 {
 }
 
 .skill-level {
-    margin: 4px 0 16px;
+    margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
     border: 1px solid var(--black);
@@ -174,6 +227,27 @@ h3 {
     background-image: url(../img/icons_svg/skills/java.svg);
 }
 
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+}
+
+.skills-header div {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.skills-header h2 {
+    margin: 0;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
 .social-link {
     display: block;
     width: 50px;
@@ -200,6 +274,7 @@ h3 {
 .subtitle {
     color: var(--green);
     font-size: 38px;
+    margin: 0;
     line-height: 120%;
 }
 
@@ -217,14 +292,14 @@ h3 {
 }
 
 .main-nav a,
-.contacts-link,
+.mail-phone-link,
 button,
 .social-link {
     transition: 500ms;
 }
 
 .main-nav a:hover,
-.contacts-link:hover {
+.mail-phone-link:hover {
     color: var(--green);
 }
 
