@@ -346,6 +346,7 @@ button:hover,
 
     h2 {
         font-size: 20px;
+        margin: 0 0 30px 0;
     }
 
     .intro {
@@ -408,7 +409,33 @@ button:hover,
         background-image: url(../img/icons_svg/mob_menu_buttons/burger.svg);
     }
 
+    .skills-header {
+        margin: 0 0 30px 0;
+    }
+
     .subtitle {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .skills-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-header button {
+        width: 100%;
+    }
+
+    .skills-header div {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .skills-header div p,
+    .skills-header h2 {
+        align-self: start;
     }
 }
