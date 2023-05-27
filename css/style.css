@@ -85,6 +85,12 @@ section {
     margin: 120px 0 120px 0;
 }
 
+.contacts-all {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .container {
     min-width: 320px;
     max-width: 1280px;
@@ -141,12 +147,7 @@ section {
 
 .mail-phone {
     display: flex;
-    gap: 40px;
-}
-
-.contacts-all {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -226,6 +227,7 @@ section {
 .skills-header {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 0 40px 0;
     gap: 40px;
@@ -243,6 +245,7 @@ section {
 
 .social {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -325,6 +328,10 @@ button:hover,
         font-size: 24px;
     }
 
+    .mail-phone-link {
+        padding: 7px 0 7px 42px;
+    }
+
     .main-header img {
         height: 60px;
         width: 60px;
@@ -349,6 +356,10 @@ button:hover,
         margin: 0 0 30px 0;
     }
 
+    .contacts-all {
+        gap: 30px;
+    }
+
     .intro {
         align-items: center;
         flex-direction: column;
@@ -360,6 +371,10 @@ button:hover,
         order: 0;
         height: 150px;
         width: 150px;
+    }
+
+    .mail-phone-link {
+        padding: 8px 0 8px 42px;
     }
 
     .main-header {
@@ -418,7 +433,7 @@ button:hover,
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .skills-header {
         flex-direction: column;
         gap: 20px;
@@ -437,5 +452,16 @@ button:hover,
     .skills-header div p,
     .skills-header h2 {
         align-self: start;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contacts-all {
+        gap: 30px;
+    }
+
+    .mail-phone {
+        flex-direction: column;
+        gap: 15px;
     }
 }
