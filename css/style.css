@@ -329,6 +329,10 @@ button:hover,
         height: 60px;
         width: 60px;
     }
+
+    .subtitle {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -344,13 +348,22 @@ button:hover,
         font-size: 20px;
     }
 
+    .intro {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
     .intro img {
+        order: 0;
         height: 150px;
         width: 150px;
     }
 
     .main-header {
         gap: 20px;
+        padding-top: 20px;
     }
 
     .main-header img {
@@ -393,5 +406,9 @@ button:hover,
 
     .nav-btn_open {
         background-image: url(../img/icons_svg/mob_menu_buttons/burger.svg);
+    }
+
+    .subtitle {
+        font-size: 20px;
     }
 }
