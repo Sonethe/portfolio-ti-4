@@ -1,0 +1,55 @@
+:root {
+    --black: #212121;
+    --green: #09A494;
+    --white: #FFFFFF;
+}
+
+body {
+    color: var(--black);
+}
+
+button {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+footer {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.main-nav a {
+    color: var(--black);
+}
+
+.mail-phone-link {
+    color: var(--black);
+}
+
+.skill-level {
+    border: 1px solid var(--black);
+}
+
+.skill-level div {
+    background-color: var(--green);
+}
+
+.social-link {
+    background-color: var(--white);
+    border: 1px solid var(--green);
+}
+
+.subtitle {
+    color: var(--green);
+}
+
+.main-nav a:hover,
+.mail-phone-link:hover {
+    color: var(--green);
+}
+
+button:hover,
+.social-link:hover {
+    color: var(--white);
+    background-color: var(--green);
+}

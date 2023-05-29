@@ -1,3 +1,6 @@
+@import url(../css/themes.css);
+@import url(../css/adaptation.css);
+
 @font-face {
     font-family: "Open Sans";
     font-style: normal;
@@ -24,24 +27,12 @@
     box-sizing: border-box;
 }
 
-:root {
-    --black: #212121;
-    --green: #09A494;
-    --white: #FFFFFF;
-}
-
 body {
-    color: var(--black);
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-}
-
-footer {
-    color: var(--white);
-    background-color: var(--black);
 }
 
 a {
@@ -50,9 +41,7 @@ a {
 
 button {
     padding: 6px 10px 10px 10px;
-    border: 1px solid var(--green);
     border-radius: 8px;
-    color: var(--green);
     background-color: transparent;
     cursor: pointer;
     text-transform: lowercase;
@@ -126,7 +115,6 @@ section {
 }
 
 .main-nav a {
-    color: var(--black);
     padding: 10px 15px 10px 15px;
     text-decoration: none;
 }
@@ -152,7 +140,6 @@ section {
 }
 
 .mail-phone-link {
-    color: var(--black);
     display: block;
     padding: 5px 0 5px 42px;
     background-position: left;
@@ -194,13 +181,11 @@ section {
     margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
-    border: 1px solid var(--black);
     border-radius: 16px;
 }
 
 .skill-level div {
     height: 14px;
-    background-color: var(--green);
     border-radius: 8px;
 }
 
@@ -253,8 +238,6 @@ section {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: var(--white);
-    border: 1px solid var(--green);
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -273,7 +256,6 @@ section {
 }
 
 .subtitle {
-    color: var(--green);
     font-size: 38px;
     margin: 0;
     line-height: 120%;
@@ -297,187 +279,4 @@ section {
 button,
 .social-link {
     transition: 500ms;
-}
-
-.main-nav a:hover,
-.mail-phone-link:hover {
-    color: var(--green);
-}
-
-button:hover,
-.social-link:hover {
-    color: var(--white);
-    background-color: var(--green);
-}
-
-@media screen and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
-
-    .intro img {
-        height: 250px;
-        width: 250px;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    section {
-        margin: 80px 0 80px 0;
-    }
-
-    .mail-phone-link {
-        padding: 7px 0 7px 42px;
-    }
-
-    .main-header img {
-        height: 60px;
-        width: 60px;
-    }
-
-    .subtitle {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 20px;
-        margin: 0 0 30px 0;
-    }
-
-    section {
-        margin: 60px 0 60px 0;
-    }
-
-    .contacts-all {
-        gap: 30px;
-    }
-
-    .intro {
-        align-items: center;
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .intro img {
-        order: 0;
-        height: 150px;
-        width: 150px;
-    }
-
-    .main-footer .container {
-        padding: 30px 20px;
-    }
-
-    .mail-phone-link {
-        padding: 8px 0 8px 42px;
-    }
-
-    .main-header {
-        gap: 20px;
-        padding-top: 20px;
-    }
-
-    .main-header img {
-        height: 40px;
-        width: 40px;
-    }
-
-    .main-header-wrap {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .main-header-wrap button,
-    .main-header-wrap button:hover {
-        background-color: transparent;
-        border: none;
-    }
-
-    .main-nav a {
-        padding: 20px 30px;
-        text-align: center;
-    }
-
-    .main-header,
-    .main-nav {
-        flex-direction: column;
-    }
-
-    .nav-btn {
-        display: block;
-        height: 30px;
-        width: 30px;
-    }
-
-    .nav-btn_close {
-        background-image: url(../img/icons_svg/mob_menu_buttons/close.svg);
-    }
-
-    .nav-btn_open {
-        background-image: url(../img/icons_svg/mob_menu_buttons/burger.svg);
-    }
-
-    .skills-header {
-        margin: 0 0 30px 0;
-    }
-
-    .subtitle {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .skills-header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .skills-header button {
-        width: 100%;
-    }
-
-    .skills-header div {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .skills-header div p,
-    .skills-header h2 {
-        align-self: start;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    section {
-        margin: 50px 0 50px 0;
-    }
-
-    .contacts-all {
-        gap: 30px;
-    }
-
-    .mail-phone {
-        flex-direction: column;
-        gap: 15px;
-    }
 }

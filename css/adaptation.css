@@ -1,0 +1,171 @@
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .intro img {
+        height: 250px;
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    section {
+        margin: 80px 0 80px 0;
+    }
+
+    .mail-phone-link {
+        padding: 7px 0 7px 42px;
+    }
+
+    .main-header img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 0 0 30px 0;
+    }
+
+    section {
+        margin: 60px 0 60px 0;
+    }
+
+    .contacts-all {
+        gap: 30px;
+    }
+
+    .intro {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .intro img {
+        order: 0;
+        height: 150px;
+        width: 150px;
+    }
+
+    .main-footer .container {
+        padding: 30px 20px;
+    }
+
+    .mail-phone-link {
+        padding: 8px 0 8px 42px;
+    }
+
+    .main-header {
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .main-header img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .main-header-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-header-wrap button,
+    .main-header-wrap button:hover {
+        background-color: transparent;
+        border: none;
+    }
+
+    .main-nav a {
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    .main-header,
+    .main-nav {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .nav-btn_close {
+        background-image: url(../img/icons_svg/mob_menu_buttons/close.svg);
+    }
+
+    .nav-btn_open {
+        background-image: url(../img/icons_svg/mob_menu_buttons/burger.svg);
+    }
+
+    .skills-header {
+        margin: 0 0 30px 0;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .skills-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-header button {
+        width: 100%;
+    }
+
+    .skills-header div {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .skills-header div p,
+    .skills-header h2 {
+        align-self: start;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section {
+        margin: 50px 0 50px 0;
+    }
+
+    .contacts-all {
+        gap: 30px;
+    }
+
+    .mail-phone {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
