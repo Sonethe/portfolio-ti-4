@@ -91,7 +91,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 70px;
 }
 
 .intro img {
@@ -107,6 +106,13 @@ section {
     align-items: center;
     display: flex;
     padding-top: 60px;
+    gap: 40px;
+    line-height: 0;
+}
+
+.main-header-wrap {
+    display: flex;
+    flex-direction: row;
     gap: 40px;
 }
 
@@ -161,6 +167,10 @@ section {
 
 .text-wrapper {
     max-width: 800px;
+}
+
+.theme-button {
+    align-self: center;
 }
 
 .skill-list {

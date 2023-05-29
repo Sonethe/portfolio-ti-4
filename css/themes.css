@@ -1,55 +1,121 @@
 :root {
     --black: #212121;
     --green: #09A494;
+    --grey: #303030;
     --white: #FFFFFF;
 }
 
-body {
+/* Light theme */
+.light-theme {
     color: var(--black);
 }
 
-button {
+.light-theme button {
     border: 1px solid var(--green);
     color: var(--green);
 }
 
-footer {
+.light-theme footer {
     color: var(--white);
     background-color: var(--black);
 }
 
-.main-nav a {
+.light-theme .main-nav a {
     color: var(--black);
 }
 
-.mail-phone-link {
+.light-theme .mail-phone-link {
     color: var(--black);
 }
 
-.skill-level {
+.light-theme .nav-btn,
+.light-theme .nav-btn:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.light-theme .skill-level {
     border: 1px solid var(--black);
 }
 
-.skill-level div {
+.light-theme .skill-level div {
     background-color: var(--green);
 }
 
-.social-link {
+.light-theme .social-link {
     background-color: var(--white);
     border: 1px solid var(--green);
 }
 
-.subtitle {
+.light-theme .subtitle {
     color: var(--green);
 }
 
-.main-nav a:hover,
-.mail-phone-link:hover {
+.light-theme .main-nav a:hover,
+.light-theme .mail-phone-link:hover {
     color: var(--green);
 }
 
-button:hover,
-.social-link:hover {
+.light-theme button:hover,
+.light-theme .social-link:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+/* Dark theme */
+.dark-theme {
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+.dark-theme button {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.dark-theme footer {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.dark-theme .main-nav a {
+    color: var(--white);
+}
+
+.dark-theme .mail-phone-link {
+    color: var(--white);
+}
+
+.dark-theme .nav-btn,
+.dark-theme .nav-btn:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.dark-theme .skill-level {
+    border: 1px solid var(--white);
+}
+
+.dark-theme .skill-level div {
+    background-color: var(--green);
+}
+
+.dark-theme .social-link {
+    background-color: var(--grey);
+    border: 1px solid var(--green);
+}
+
+.dark-theme .subtitle {
+    color: var(--green);
+}
+
+.dark-theme .main-nav a:hover,
+.dark-theme .mail-phone-link:hover {
+    color: var(--green);
+}
+
+.dark-theme button:hover,
+.dark-theme .social-link:hover {
     color: var(--white);
     background-color: var(--green);
 }

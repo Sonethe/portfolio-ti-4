@@ -41,6 +41,7 @@
 
     h1 {
         font-size: 32px;
+        margin: 0 0 10px 0;
     }
 
     h2 {
@@ -92,12 +93,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .main-header-wrap button,
-    .main-header-wrap button:hover {
-        background-color: transparent;
-        border: none;
     }
 
     .main-nav a {
@@ -161,11 +156,15 @@
     }
 
     .contacts-all {
-        gap: 30px;
+        gap: 20px;
     }
 
     .mail-phone {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .social {
         gap: 15px;
     }
 }
