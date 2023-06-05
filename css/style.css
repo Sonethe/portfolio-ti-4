@@ -201,22 +201,6 @@ section {
     text-transform: lowercase;
 }
 
-.skill-item_html {
-    background-image: url(../img/icons_svg/skills/html.svg);
-}
-
-.skill-item_css {
-    background-image: url(../img/icons_svg/skills/css.svg);
-}
-
-.skill-item_python {
-    background-image: url(../img/icons_svg/skills/python.svg);
-}
-
-.skill-item_java {
-    background-image: url(../img/icons_svg/skills/java.svg);
-}
-
 .skills-header {
     align-items: center;
     display: flex;
