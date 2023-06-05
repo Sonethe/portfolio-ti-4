@@ -34,6 +34,19 @@
     }
 }
 
+@media screen and (max-width: 735px) {
+    .intro img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 692px) {
+    .intro {
+        gap: 20px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     body {
         font-size: 14px;
