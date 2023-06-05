@@ -22,7 +22,7 @@ data.forEach(skill => {
   dd.classList.add('skill-level');
 
   dt.textContent = skill.name;
-  dt.style.backgroundImage = `url(/img/icons_svg/skills/${skill.icon})`;
+  dt.style.backgroundImage = `url(../img/icons_svg/skills/${skill.icon})`;
   div.textContent = `${skill.level}%`;
   div.style.width = `${skill.level}%`;
 
