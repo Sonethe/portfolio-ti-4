@@ -7,21 +7,25 @@ let skills = {
     {
       name: 'html',
       level: 10,
+      class: 'skill-item_html',
       icon: 'html.svg'
     },
     {
       name: 'css',
       level: 12,
+      class: 'skill-item_css',
       icon: 'css.svg'
     },
     {
       name: 'python',
       level: 5,
+      class: 'skill-item_python',
       icon: 'python.svg'
     },
     {
       name: 'java',
       level: 42,
+      class: 'skill-item_java',
       icon: 'java.svg'
     }
   ],

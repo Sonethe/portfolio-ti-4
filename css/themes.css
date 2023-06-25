@@ -1,13 +1,16 @@
 :root {
     --black: #212121;
     --green: #09A494;
-    --grey: #303030;
+    --grey: #0D1117;
+    --grey2: #21262D;
+    --grey3: #30363D;
     --white: #FFFFFF;
 }
 
 /* Light theme */
 .light-theme {
     color: var(--black);
+    background-color: var(--white);
 }
 
 .light-theme button {
@@ -74,8 +77,8 @@
 }
 
 .dark-theme footer {
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--grey2);
 }
 
 .dark-theme .main-nav a {
@@ -84,6 +87,14 @@
 
 .dark-theme .mail-phone-link {
     color: var(--white);
+}
+
+.mail-phone-link_email {
+    background-image: url(../img/icons_svg/contacts_dark-theme/email_dark.svg);
+}
+
+.mail-phone-link_tel {
+    background-image: url(../img/icons_svg/contacts_dark-theme/phone_dark.svg);
 }
 
 .dark-theme .nav-btn,
@@ -101,7 +112,7 @@
 }
 
 .dark-theme .social-link {
-    background-color: var(--grey);
+    background-color: var(--grey3);
     border: 1px solid var(--green);
 }
 
