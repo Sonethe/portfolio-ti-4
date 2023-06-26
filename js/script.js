@@ -1,8 +1,13 @@
 'use strict';
 
-const skillList = document.querySelector('dl.skill-list');
+const skillList   = document.querySelector('dl.skill-list'),
+      sortBtns    = document.querySelector('div.skills-sort'),
+      page        = document.querySelector('.page'),
+      themeButton = document.querySelector('.theme-button');
 
 let skills = {
+  isSort: false,
+
   data: [
     {
       name: 'html',
@@ -25,7 +30,9 @@ let skills = {
       icon: 'java.svg'
     }
   ],
-  generateist(parentElement) {
+
+  generateList(parentElement) {
+    parentElement.innerHTML = '';
     
     this.data.forEach((skill) => {
       const   dt = document.createElement('dt'),
@@ -44,12 +51,55 @@ let skills = {
       parentElement.append(dt, dd);
     });
   },
+
+  sortList(type) {
+    if(this.isSort !== type) {
+      this.data.sort(this.getComparer(type));
+      skills.isSort = type;
+    } else {
+      this.data.reverse();
+    }
+
+    skills.generateList(skillList);
+  },
+
+  getComparer(prop) {
+    return function (a,b) {
+      if(a[prop] < b[prop]) {
+        return -1;
+      }
+
+      if(a[prop] > b[prop]) {
+        return 1;
+      }
+
+      return 0;
+    }
+  },
 };
 
-skills.generateist(skillList);
+skills.generateList(skillList);
 
-const   page = document.querySelector('.page'),
-      themeButton = document.querySelector('.theme-button');
+sortBtns.addEventListener('click', (e) => {
+  let target = e.target,
+      type   = target.dataset.type;
+
+  if(target.nodeName === "BUTTON") {
+    switch(type) {
+
+      case 'name':
+        skills.sortList(type);
+        break;
+
+      case 'level':
+        skills.sortList(type);
+        break;
+
+      default:
+        console.log('unknown button');
+    }
+  }
+});
 
 themeButton.onclick = function() {
   page.classList.toggle('light-theme');
