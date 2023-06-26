@@ -7,25 +7,21 @@ let skills = {
     {
       name: 'html',
       level: 10,
-      class: 'skill-item_html',
       icon: 'html.svg'
     },
     {
       name: 'css',
       level: 12,
-      class: 'skill-item_css',
       icon: 'css.svg'
     },
     {
       name: 'python',
       level: 5,
-      class: 'skill-item_python',
       icon: 'python.svg'
     },
     {
       name: 'java',
       level: 42,
-      class: 'skill-item_java',
       icon: 'java.svg'
     }
   ],
@@ -36,7 +32,7 @@ let skills = {
               dd = document.createElement('dd'),
               div = document.createElement('div');
 
-      dt.classList.add('skill-item', skill.class);
+      dt.classList.add('skill-item');
       dd.classList.add('skill-level');
     
       dt.textContent = skill.name;
@@ -45,15 +41,14 @@ let skills = {
       div.style.width = `${skill.level}%`;
     
       dd.append(div);
-      parentElement.append(dt);
-      parentElement.append(dd);
+      parentElement.append(dt, dd);
     });
   },
 };
 
 skills.generateist(skillList);
 
-let   page = document.querySelector('.page'),
+const   page = document.querySelector('.page'),
       themeButton = document.querySelector('.theme-button');
 
 themeButton.onclick = function() {
