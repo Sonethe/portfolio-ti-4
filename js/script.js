@@ -2,6 +2,8 @@
 
 const skillList   = document.querySelector('dl.skill-list'),
       sortBtns    = document.querySelector('div.skills-sort'),
+      navMenu     = document.querySelector('.main-nav'),
+      navBtn      = document.querySelector('.nav-btn'),
       page        = document.querySelector('.page'),
       themeButton = document.querySelector('.theme-button');
 
@@ -35,8 +37,8 @@ let skills = {
     parentElement.innerHTML = '';
     
     this.data.forEach((skill) => {
-      const   dt = document.createElement('dt'),
-              dd = document.createElement('dd'),
+      const   dt  = document.createElement('dt'),
+              dd  = document.createElement('dd'),
               div = document.createElement('div');
 
       dt.classList.add('skill-item');
@@ -54,7 +56,7 @@ let skills = {
 
   sortList(type) {
     if(this.isSort !== type) {
-      this.data.sort(this.getComparer(type));
+      this.data.sort(getComparer(type));
       skills.isSort = type;
     } else {
       this.data.reverse();
@@ -62,20 +64,36 @@ let skills = {
 
     skills.generateList(skillList);
   },
+};
 
-  getComparer(prop) {
-    return function (a,b) {
-      if(a[prop] < b[prop]) {
-        return -1;
-      }
-
-      if(a[prop] > b[prop]) {
-        return 1;
-      }
-
-      return 0;
-    }
+let menu = {
+  closeMenu() {
+    navMenu.classList.add('main-nav_closed');
+    navBtn.classList.remove('nav-btn_close');
+    navBtn.classList.add('nav-btn_open');
+    navBtn.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
   },
+  
+  openMenu() {
+    navMenu.classList.remove('main-nav_closed');
+    navBtn.classList.remove('nav-btn_open');
+    navBtn.classList.add('nav-btn_close');
+    navBtn.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+  },
+};
+
+function getComparer(prop) {
+  return function (a,b) {
+    if(a[prop] < b[prop]) {
+      return -1;
+    }
+
+    if(a[prop] > b[prop]) {
+      return 1;
+    }
+
+    return 0;
+  }
 };
 
 skills.generateList(skillList);
@@ -98,6 +116,14 @@ sortBtns.addEventListener('click', (e) => {
       default:
         console.log('unknown button');
     }
+  }
+});
+
+navBtn.addEventListener('click', (e) => {
+  if(e.target.classList.contains('nav-btn_open')) {
+    menu.openMenu();
+  } else {
+    menu.closeMenu();
   }
 });
 
