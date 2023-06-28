@@ -4,8 +4,8 @@ const skillList   = document.querySelector('dl.skill-list'),
       sortBtns    = document.querySelector('div.skills-sort'),
       navMenu     = document.querySelector('.main-nav'),
       navBtn      = document.querySelector('.nav-btn'),
-      page        = document.querySelector('.page'),
-      themeButton = document.querySelector('.theme-button');
+      bodyTheme   = document.querySelector('body'),
+      chechBox    = document.querySelector('input.switch-checkbox');
 
 let skills = {
   isSort: false,
@@ -127,7 +127,28 @@ navBtn.addEventListener('click', (e) => {
   }
 });
 
-themeButton.onclick = function() {
-  page.classList.toggle('light-theme');
-  page.classList.toggle('dark-theme');
+chechBox.addEventListener('change', (e) => {
+  if(e.target.checked == true) {
+    bodyTheme.classList.remove('dark-theme');
+    bodyTheme.classList.add('light-theme');
+  } else {
+    bodyTheme.classList.remove('light-theme');
+    bodyTheme.classList.add('dark-theme');
+  }
+
+  localStorage.setItem('checked', e.target.checked);
+});
+
+function localStorageTheme() {
+  if(localStorage.getItem('checked') == 'true') {
+    chechBox.checked = true;
+    bodyTheme.classList.remove('dark-theme');
+    bodyTheme.classList.add('light-theme');
+  } else {
+    chechBox.checked = false;
+    bodyTheme.classList.remove('light-theme');
+    bodyTheme.classList.add('dark-theme');
+  }
 };
+
+localStorageTheme();
