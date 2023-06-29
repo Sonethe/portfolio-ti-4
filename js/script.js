@@ -1,13 +1,13 @@
 'use strict';
 
-const skillList   = document.querySelector('dl.skill-list'),
-      sortBtns    = document.querySelector('div.skills-sort'),
-      navMenu     = document.querySelector('.main-nav'),
-      navBtn      = document.querySelector('.nav-btn'),
-      bodyTheme   = document.querySelector('body'),
-      chechBox    = document.querySelector('input.switch-checkbox');
+const skillList     = document.querySelector('dl.skill-list'),
+      sortBtns      = document.querySelector('div.skills-sort'),
+      navMenu       = document.querySelector('.main-nav'),
+      navBtn        = document.querySelector('.nav-btn'),
+      body          = document.body,
+      switchThemeCB = document.querySelector('input.switch-checkbox');
 
-let skills = {
+const skills = {
   isSort: false,
 
   data: [
@@ -66,7 +66,7 @@ let skills = {
   },
 };
 
-let menu = {
+const menu = {
   closeMenu() {
     navMenu.classList.add('main-nav_closed');
     navBtn.classList.remove('nav-btn_close');
@@ -95,8 +95,6 @@ function getComparer(prop) {
     return 0;
   }
 };
-
-skills.generateList(skillList);
 
 sortBtns.addEventListener('click', (e) => {
   let target = e.target,
@@ -127,28 +125,30 @@ navBtn.addEventListener('click', (e) => {
   }
 });
 
-chechBox.addEventListener('change', (e) => {
+switchThemeCB.addEventListener('change', (e) => {
   if(e.target.checked == true) {
-    bodyTheme.classList.remove('dark-theme');
-    bodyTheme.classList.add('light-theme');
+    body.classList.remove('dark-theme');
+    body.classList.add('light-theme');
   } else {
-    bodyTheme.classList.remove('light-theme');
-    bodyTheme.classList.add('dark-theme');
+    body.classList.remove('light-theme');
+    body.classList.add('dark-theme');
   }
 
-  localStorage.setItem('checked', e.target.checked);
+  localStorage.setItem('themeCB', e.target.checked);
 });
 
-function localStorageTheme() {
-  if(localStorage.getItem('checked') == 'true') {
-    chechBox.checked = true;
-    bodyTheme.classList.remove('dark-theme');
-    bodyTheme.classList.add('light-theme');
+function setLSTheme() {
+  if(localStorage.getItem('themeCB') == 'true') {
+    switchThemeCB.checked = true;
+    body.classList.remove('dark-theme');
+    body.classList.add('light-theme');
   } else {
-    chechBox.checked = false;
-    bodyTheme.classList.remove('light-theme');
-    bodyTheme.classList.add('dark-theme');
+    switchThemeCB.checked = false;
+    body.classList.remove('light-theme');
+    body.classList.add('dark-theme');
   }
 };
 
-localStorageTheme();
+skills.generateList(skillList);
+setLSTheme();
+menu.closeMenu();
