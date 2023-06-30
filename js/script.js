@@ -1,6 +1,7 @@
 'use strict';
 
 const skillList     = document.querySelector('dl.skill-list'),
+      skillSection  = document.querySelector('.skills'),
       sortBtns      = document.querySelector('div.skills-sort'),
       navMenu       = document.querySelector('.main-nav'),
       navBtn        = document.querySelector('.nav-btn'),
@@ -10,28 +11,7 @@ const skillList     = document.querySelector('dl.skill-list'),
 const skills = {
   isSort: false,
 
-  data: [
-    {
-      name: 'html',
-      level: 10,
-      icon: 'html.svg'
-    },
-    {
-      name: 'css',
-      level: 12,
-      icon: 'css.svg'
-    },
-    {
-      name: 'python',
-      level: 5,
-      icon: 'python.svg'
-    },
-    {
-      name: 'java',
-      level: 42,
-      icon: 'java.svg'
-    }
-  ],
+  data: [],
 
   generateList(parentElement) {
     parentElement.innerHTML = '';
@@ -64,6 +44,19 @@ const skills = {
 
     skills.generateList(skillList);
   },
+
+  initList(url, parentElement, skillSection) {
+    fetch(url)
+      .then(data => data.json())
+      .then(object => {
+        this.data = object;
+        this.generateList(parentElement);
+      })
+      .catch(() => {
+        console.error('Something went wrong');
+        skillSection.remove();
+      });
+  }
 };
 
 const menu = {
@@ -149,6 +142,6 @@ function setLSTheme() {
   }
 };
 
-skills.generateList(skillList);
+skills.initList("db/skills.json", skillList, skillSection);
 setLSTheme();
 menu.closeMenu();

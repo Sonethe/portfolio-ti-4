@@ -1,0 +1,22 @@
+[
+    {
+        "name": "html",
+        "level": 10,
+        "icon": "html.svg"
+    },
+    {
+        "name": "css",
+        "level": 12,
+        "icon": "css.svg"
+    },
+    {
+        "name": "python",
+        "level": 5,
+        "icon": "python.svg"
+    },
+    {
+        "name": "java",
+        "level": 42,
+        "icon": "java.svg"
+    }
+]
